@@ -1,4 +1,4 @@
-# Research
+# Research: IT Helpdesk prototype system
 
 # Objective
 This project is Help Desk ticketing system prototype for internal customers to submit help desk ticket to IT department.

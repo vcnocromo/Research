@@ -1,10 +1,13 @@
+# This class contains ticket functions
+# Static field for ticket number
 class Ticket(object):
     count_number = 0
     count_submitted = 0
     count_resolved = 0
     count_open = 0
 
-    def __init__(self, id, name, email, description):
+# Store ticket data
+    def __init__(self, id, name, email, description): # We may store each ticket's response as an object here for IT reponse update
         Ticket.count_number = Ticket.count_number + 1
         self.number = 2000 + Ticket.count_number
         self.id = id
@@ -14,9 +17,11 @@ class Ticket(object):
         self.opened()
         Ticket.count_submitted = Ticket.count_submitted + 1
 
+# Return number of each ticket status types
     def Stats():
         return Ticket.count_submitted, Ticket.count_resolved, Ticket.count_open
 
+# Methods to update ticket status number
     def opened(self):
         Ticket.count_open = Ticket.count_open + 1
         self.status = "Open"

@@ -45,7 +45,7 @@ while True:
       print("Ticket Status:", Ticket_List[i].status)
     print("-------------------------------------------")
 
-  elif option == 3: # Need to add code that IT helpdesk can update their response for open ticket and fuction to closed ticket after the problem has been solved, I already tried to added it but it gave a incorrect output
+  elif option == 3: # Need to add code that IT helpdesk can update their response for open ticket and function to closed ticket after the problem has been solved, I already tried to added it but it gave a incorrect output
     ticket_number = int(input("Enter your ticket number: "))
     found = False
     for i in range(len(Ticket_List)):

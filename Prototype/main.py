@@ -13,7 +13,7 @@ while True:
     break
 
   elif option == 1:
-    while True: # May add default response in this section to assign reponse's value for particular ticket
+    while True: # May add default response in this section to assign reponse's value for particular ticket so this need to be improve in the future becasue I tried to added it here but the code have some error that gave a incorrect output
       id = input("Enter your staff ID: ")
       name = input("Enter your name: ")
       email = input("Enter your email: ")
@@ -45,7 +45,7 @@ while True:
       print("Ticket Status:", Ticket_List[i].status)
     print("-------------------------------------------")
 
-  elif option == 3: # Need to add code that IT helpdesk can update their response for open ticket and fuction to closed ticket after the problem has been solved
+  elif option == 3: # Need to add code that IT helpdesk can update their response for open ticket and fuction to closed ticket after the problem has been solved, I already tried to added it but it gave a incorrect output
     ticket_number = int(input("Enter your ticket number: "))
     found = False
     for i in range(len(Ticket_List)):

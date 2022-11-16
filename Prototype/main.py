@@ -1,3 +1,4 @@
+# Main file for helpdesk system
 import Ticket
 import Menu
 
@@ -12,21 +13,21 @@ while True:
     break
 
   elif option == 1:
-    while True:
+    while True: # May add default response in this section to assign reponse's value for particular ticket
       id = input("Enter your staff ID: ")
       name = input("Enter your name: ")
       email = input("Enter your email: ")
       print("if you require a new password type: Password change")
       description = input("Enter description of problem: ")
       ticket = Ticket.Ticket(id, name, email, description)
-      if description == "Password change":
+      if description == "Password change": # Can add other possible correct input eg. "Password Change" or "password change"
         ticket.closed()
         print("Your new password is", menu.PasswordGenerator(ticket))
       else:
         print("Ticket has been submitted to the helpdesk queue")
       Ticket_List.append(ticket)
       answer = input("Do you have another problem to submit? (Y/N)")
-      if answer != 'Y':
+      if answer != 'Y': # Can add other possible correct input eg. "y" or "yes" or "Yes"
         break
 
   elif option == 2:
@@ -44,7 +45,7 @@ while True:
       print("Ticket Status:", Ticket_List[i].status)
     print("-------------------------------------------")
 
-  elif option == 3:
+  elif option == 3: # Need to add code that IT helpdesk can update their response for open ticket and fuction to closed ticket after the problem has been solved
     ticket_number = int(input("Enter your ticket number: "))
     found = False
     for i in range(len(Ticket_List)):

@@ -1,11 +1,14 @@
+# This class contains menu text and password change function
 class Menu_List(object):
 
   def __init__():
     pass
 
+# Function generates a new user password
   def PasswordGenerator(ticket):
     return ticket.id[0:2]+ticket.name[0:3]
 
+# Displays menu options and input prompt
   def Menu():
     print("-------------------------------------------")
     print("Select from the following choices:")
